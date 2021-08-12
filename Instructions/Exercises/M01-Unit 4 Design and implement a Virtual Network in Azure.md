@@ -60,7 +60,6 @@ In this exercise, you will:
 4. Use the information in the following table to create the CoreServicesVnet virtual network.  
    ‎Remove or overwrite the default IP Address space![ip address configuration for azure virtual network deployment ](../media/default-vnet-ip-address-range-annotated.png)
 
- 
 
 | **Tab**      | **Option**         | **Value**            |
 | ------------ | ------------------ | -------------------- |
@@ -139,9 +138,6 @@ In this exercise, you will:
 2. Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed. Your list should look like this:
 
    ![List of resources.](../media/virtual_network.png)
-
-
-3. Note that Azure creates NetworkWatchers for each region that you use.
 
 4. Select **CoreServicesVnet**. 
 
