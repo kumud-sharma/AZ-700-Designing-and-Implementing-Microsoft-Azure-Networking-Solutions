@@ -138,7 +138,7 @@ In this exercise, you will:
 
 2. Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed. Your list should look like this:
 
-![image](https://user-images.githubusercontent.com/33771500/129150697-d4e3cdb4-43ad-4198-ba6c-ea901588af27.png)
+![List of resources.](../media/virtual_network.png)
 
 
 3. Note that Azure creates NetworkWatchers for each region that you use.
