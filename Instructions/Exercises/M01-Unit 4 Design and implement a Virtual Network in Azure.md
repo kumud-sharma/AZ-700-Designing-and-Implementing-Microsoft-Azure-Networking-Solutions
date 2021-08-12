@@ -1,8 +1,3 @@
----
-Exercise:
-    title: 'M01-Unit 4 Design and implement a Virtual Network in Azure'
-    module: 'Module - Introduction to Azure Virtual Networks'
----
 # M01-Unit 4 Design and implement a Virtual Network in Azure
 
 
@@ -49,36 +44,13 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
 In this exercise, you will:
 
-+ Task 1: Create the Contoso resource group
-+ Task 2: Create the CoreServicesVnet virtual network and subnets
-+ Task 3: Create the ManufacturingVnet virtual network and subnets
-+ Task 4: Create the ResearchVnet virtual network and subnets
-+ Task 5: Verify the creation of VNets and Subnets
-
-## Task 1: Create the Contoso resource group
-
-1. Go to [Azure Portal](https://portal.azure.com/).
-
-2. On the home page, under **Azure services**, select **Resource groups**.  
-   ‎![Azure portal home page with Resource groups highlighted.](../media/azure-portal-home-page-annotated.png)
-
-3. In Resource groups, select **+ Create**.
-
-4. Use the information in the following table to create the resource group.
-
-| **Tab**         | **Option**                                 | **Value**            |
-| --------------- | ------------------------------------------ | -------------------- |
-| Basics          | Resource group                             | ContosoResourceGroup |
-|                 | Region                                     | (US) West US         |
-| Tags            | No changes required                        |                      |
-| Review + create | Review your settings and select **Create** |                      |
++ Task 1: Create the CoreServicesVnet virtual network and subnets
++ Task 2: Create the ManufacturingVnet virtual network and subnets
++ Task 3: Create the ResearchVnet virtual network and subnets
++ Task 4: Verify the creation of VNets and Subnets
 
 
-5. In Resource groups, verify that **ContosoResourceGroup** appears in the list.
-
- 
-
-## Task 2: Create the CoreServicesVnet virtual network and subnets
+## Task 1: Create the CoreServicesVnet virtual network and subnets
 
 1. On the Azure Portal home page, select **Create a resource**.
 2. In **Search services and marketplace**, enter virtual network.  
@@ -118,7 +90,7 @@ In this exercise, you will:
  
  9. Repeat steps 1 -8 for each VNet based on the tables below  
 
-## Task 3: Create the ManufacturingVnet virtual network and subnets
+## Task 2: Create the ManufacturingVnet virtual network and subnets
 
 
 | **Tab**      | **Option**         | **Value**             |
@@ -142,7 +114,7 @@ In this exercise, you will:
 |                           | Subnet address range | 10.30.22.0/24             |
  
 
-## Task 4: Create the ResearchVnet virtual network and subnets
+## Task 3: Create the ResearchVnet virtual network and subnets
 
 
 | **Tab**      | **Option**         | **Value**            |
@@ -158,7 +130,7 @@ In this exercise, you will:
 |                      | Subnet address range | 10.40.0.0/24         |
  
 
-## Task 5: Verify the creation of VNets and Subnets
+## Task 4: Verify the creation of VNets and Subnets
 
 1. On the Azure Portal home page, select **All resources**.
 
@@ -166,7 +138,8 @@ In this exercise, you will:
 
 2. Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed. Your list should look like this:
 
-   ![All resources list with CoreServicesVnet, ManufacturingVnet, and ResearchVnet highlighted.](../media/all-resources-list-annotated.png)
+![image](https://user-images.githubusercontent.com/33771500/129150697-d4e3cdb4-43ad-4198-ba6c-ea901588af27.png)
+
 
 3. Note that Azure creates NetworkWatchers for each region that you use.
 
