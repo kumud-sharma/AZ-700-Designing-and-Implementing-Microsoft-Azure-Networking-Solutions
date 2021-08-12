@@ -28,9 +28,11 @@ In this exercise, you will:
 
 4. When prompted, select **Show advanced settings** and then select **Use existing** and choose existing resource group. Then select **Create new** against Storage account as well as File Share and provide a unique value in both of the fields and then click on **Create storage**, and wait for the Azure Cloud Shell to initialize. 
 
-4. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json and azuredeploy.parameters.json into the Cloud Shell home directory.
+5. Navigate to the location that is specified. Az-700-Designng-and-Implementing-Microsoft-Azure-Networking-Solutions/Allfiles/Exercises/M02
 
-5. Deploy the following ARM templates to create the virtual network and subnets needed for this exercise:
+6. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json and azuredeploy.parameters.json into the Cloud Shell home directory.
+
+7. Deploy the following ARM templates to create the virtual network and subnets needed for this exercise:
 
  >Note: Use the RGName as the existing resource group name which was already defined
 
