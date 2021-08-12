@@ -35,7 +35,7 @@ In this exercise, you will:
  >Note: Use the RGName as the existing resource group name which was already defined
 
    ```powershell
-   $RGName = "ContosoResourceGroup"
+   $RGName = "ContosoResourceGroup" (Use existing rgname)
    
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
    ```
