@@ -138,7 +138,7 @@ In this exercise, you will:
 
 2. Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed. Your list should look like this:
 
-![List of resources.](../media/virtual_network.png)
+   ![List of resources.](../media/virtual_network.png)
 
 
 3. Note that Azure creates NetworkWatchers for each region that you use.
@@ -149,7 +149,7 @@ In this exercise, you will:
 
 6. In CoreServicesVnet | Subnets, verify that the subnets you created are listed, and that the IP address ranges are correct.
 
-   ![List of subnets in CoreServicesVnet.](../media/verify-subnets-annotated.png)
+   ![List of subnets in CoreServicesVnet.](../media/subnet.png)
 
 7. Repeat steps 4 -6 for each VNet.
 
