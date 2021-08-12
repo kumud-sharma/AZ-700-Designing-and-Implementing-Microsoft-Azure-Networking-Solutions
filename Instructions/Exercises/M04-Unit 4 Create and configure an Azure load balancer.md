@@ -1,3 +1,9 @@
+---
+Exercise:
+    title: 'M04-Unit 4 Create and configure an Azure load balancer'
+    module: 'Module - Load balancing non-HTTP(S) traffic in Azure'
+---
+
 
 # M04-Unit 4 Create and configure an Azure load balancer
 
@@ -35,18 +41,18 @@ In this section, you will create a virtual network and a subnet.
    | **Setting**    | **Value**                                  |
    | -------------- | ------------------------------------------ |
    | Subscription   | Select your subscription                   |
-   | Resource group | Select: **IntLB-RG-{deployment-Id}** |
+   | Resource group | Select **Create  new**  Name: **IntLB-RG** |
    | Name           | **IntLB-VNet**                             |
-   | Region         | **default**                           |
+   | Region         | **(US) West US**                           |
 
 
 5. Click **Next : IP Addresses**.
 
 6. On the **IP Addresses** tab, in the **IPv4 address space** box, type **10.1.0.0/16**.
 
-7. Under **Subnet name**.
+7. Under **Subnet name**, select the word **default**.
 
-8. In the **+Add Subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**.
+8. In the **Edit subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**.
 
 9. Click **Save**.
 
@@ -83,25 +89,19 @@ In this section, you will create an internal Standard SKU load balancer. The rea
    | **Setting**           | **Value**                |
    | --------------------- | ------------------------ |
    | Subscription          | Select your subscription |
-   | Resource group        | **IntLB-RG-{deployment-id}**             |
+   | Resource group        | **IntLB-RG**             |
    | Name                  | **myIntLoadBalancer**    |
-   | Region                | **default**         |
+   | Region                | **(US) West US**         |
    | Type                  | **Internal**             |
    | SKU                   | **Standard**             |
-   
- 6.**next:frontend ip configuration** and add **+ Add a frontend**
-     | **Setting**           | **Value**                |
-   | --------------------- | ------------------------ |
-   | name          | **LoadBalancerFrontEnd** |
-   | Virtual network        | **IntLB-VNet**             |
-   | Subnet                   | **myBackendSubnet**    |
-   | IP address assignment                 | **Dynamic**         |
-  
+   | Virtual network       | **IntLB-VNet**           |
+   | Subnet                | **myBackendSubnet**      |
+   | IP address assignment | **Dynamic**              |
 
 
-7. Click **Review + create**.
+6. Click **Review + create**.
 
-8. Click **Create**.
+7. Click **Create**.
 
 ## Task 3: Create load balancer resources
 
@@ -186,12 +186,12 @@ In this section, you will create three VMs, that will be in the same availabilit
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. Download the **azuredeploy.json, azuredeploy.parameters.vm1.json, azuredeploy.parameters.vm2.json and azuredeploy.parameters.vm3.json**files from link **https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M04** In the toolbar of the Cloud Shell pane,go to powershell,and add advance settings and enter storage name and file name then create click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json, azuredeploy.parameters.vm1.json, azuredeploy.parameters.vm2.json and azuredeploy.parameters.vm3.json into the Cloud Shell home directory.
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json, azuredeploy.parameters.vm1.json, azuredeploy.parameters.vm2.json and azuredeploy.parameters.vm3.json into the Cloud Shell home directory.
 
 3. Deploy the following ARM templates to create the virtual network, subnets, and VMs needed for this exercise:
 
    ```powershell
-   $RGName = "IntLB-RG-{deployment-id}"
+   $RGName = "IntLB-RG"
    
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm1.json
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm2.json
@@ -211,7 +211,7 @@ In this section, you will create three VMs, that will be in the same availabilit
 5. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then click **Add**.
 
 6. On the **myBackendPool** page, click **Save**.
-   ![Picture 10](../media/add-vms-backendpool.png)
+   ![Picture 7](../media/add-vms-backendpool.png)
 
  
 
