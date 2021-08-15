@@ -360,7 +360,7 @@ In this section, you'll use the virtual machine you created in the previous step
 
 - Select **Resource groups** in the left-hand navigation pane.
 
-- Select **CreatePrivateEndpointQS-rg-<DeploymentID>**.
+- Select **CreatePrivateEndpointQS-rg-DeploymentID**.
 
 - Select **myVM**.
 
