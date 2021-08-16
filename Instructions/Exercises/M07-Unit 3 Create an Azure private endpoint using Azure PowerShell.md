@@ -14,11 +14,22 @@ Private Endpoints can be created for different kinds of Azure services, such as 
 
 - An Azure Web App with a PremiumV2-tier or higher app service plan deployed in your Azure subscription.
 
-1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+1. Click on the Azure Portal icon on the VM desktop and login with the Azure credentials from the Lab Environment details page.
 
-2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files template.json and parameters.json into the Cloud Shell home directory.
+2. From the Azure portal, open the **Azure Cloud Shell** by clicking on the icon in the top right of the Azure Portal.
+   ![Screenshot of Azure Portal Azure Cloud Shell icon.](../media/shell.png)
+   
+3. When prompted to select either **Bash** or **PowerShell**, select **PowerShell**.
+   
+4. When prompted, select **Show advanced settings** and then select **Use existing** and choose existing resource group. Then select **Create new** against Storage account as well as File Share and provide a unique value in both of the fields and then click on **Create storage**, and wait for the Azure Cloud Shell to initialize. 
 
-3. Deploy the following ARM templates to create the PremiumV2-tier Azure Web App needed for this exercise:
+5. Navigate to the location that is specified. Az-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Allfiles/Exercises/M07
+
+6. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files template.json and        parameters.json into the Cloud Shell home directory.
+   ![Screenshot of Azure Portal Azure Cloud Shell icon.](../media/upload.png)
+
+
+7. Deploy the following ARM templates to create the PremiumV2-tier Azure Web App needed for this exercise:
 
    ```powershell
    $RGName = "CreatePrivateEndpointQS-rg"
