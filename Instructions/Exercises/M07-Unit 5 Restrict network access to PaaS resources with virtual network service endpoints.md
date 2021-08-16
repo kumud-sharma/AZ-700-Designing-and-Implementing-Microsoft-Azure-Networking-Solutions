@@ -204,7 +204,7 @@ The steps necessary to restrict network access to resources created through Azur
    | -------------- | ------------------------------------------------------------ |
    | Subscription   | Select your subscription                                     |
    | Resource group | Select Use existing and select the resource group provided by Learn. |
-   | Name           | Enter a contosostoragewest..                                 |
+   | Name           | Enter a contosostoragewest                                |
    | Performance    | Standard StorageV2 (general purpose v2)                      |
    | Location       | Select West US                                               |
    | Replication    | Locally-redundant storage (LRS)                              |
