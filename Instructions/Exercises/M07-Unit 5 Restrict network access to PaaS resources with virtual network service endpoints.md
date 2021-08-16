@@ -1,8 +1,4 @@
----
-Exercise:
-    title: 'M07-Unit 5 Restrict network access to PaaS resources with virtual network service endpoints'
-    module: 'Module - Design and implement private access to Azure Services'
----
+
 
 # M07-Unit 5 Restrict network access to PaaS resources with virtual network service endpoints
 
@@ -37,7 +33,7 @@ In this exercise, you will:
    | **Setting**    | **Value**                                     |
    | -------------- | --------------------------------------------- |
    | Subscription   | Select your subscription                      |
-   | Resource group | Select the provided resource group from Learn |
+   | Resource group | Select the provided resource group
    | Name           | CoreServicesVNet                              |
    | Location       | Select **West US**                            |
 
@@ -219,7 +215,7 @@ The steps necessary to restrict network access to resources created through Azur
 
 1. After the storage account is created, enter the name of the storage account in the **Search resources, services, and docs** box, at the top of the portal. When the name of your storage account appears in the search results, select it.
 2. Select **File shares**, as shown in the following picture: 
-   ![Graphical user interface, application Description automatically generated](../media/new-file-share.png)
+   ![Graphical user interface, application Description automatically generated](../media/fileshare.png)
 3. Select **+ File share**.
 4. Enter marketing under **Name**, and then select **Create**.
 
@@ -268,8 +264,8 @@ To test network access to a storage account, deploy a VM to each subnet.
    | Virtual machine name  | ContosoWestPublic                                            |
    | Region                | (US) West US                                                 |
    | Availability Options  | No infrastructure redundancy required                        |
-   | Image                 | Select **Windows Server 2019 Datacenter**.                   |
-   | Size                  | Standard_D2s                                                 |
+   | Image                 | Select **Windows Server 2019 Datacenter-Gen1**.                   |
+   | Size                  | Standard_D2s_v3                                                 |
    | Administrator Account |                                                              |
    | Authentication type   | SSH public key                                               |
    | Username              | Enter a user name of your choosing.                          |
@@ -280,7 +276,7 @@ To test network access to a storage account, deploy a VM to each subnet.
    | Select inbound ports  | RDP (3389)                                                   |
 
 3. Then select the **Networking** tab. Enter, or select, the following information:
-   ![Graphical user interface, application, email Description automatically generated](../media/create-virtual-machine-networking.png)
+   ![Graphical user interface, application, email Description automatically generated](../media/createvm.png)
 
    | **Setting**                | **Value**                  |
    | -------------------------- | -------------------------- |
