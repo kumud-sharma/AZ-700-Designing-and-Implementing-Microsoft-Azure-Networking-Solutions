@@ -61,13 +61,13 @@ In this exercise, you will:
    ‎Remove or overwrite the default IP Address space![ip address configuration for azure virtual network deployment ](../media/default-vnet-ip-address-range-annotated.png)
 
 
-| **Tab**      | **Option**         | **Value**            |
-| ------------ | ------------------ | -------------------- |
-| Basics       | Resource Group     | ContosoResourceGroup |
-|              | Name               | CoreServicesVnet     |
-|              | Region             | (US) West US         |
-| IP Addresses | IPv4 address space | 10.20.0.0/16         |
-
+| **Tab**      | **Option**         | **Value**                          |
+| ------------ | ------------------ | --------------------               |
+| Basics       | Resource Group     | ContosoResourceGroup-Deployment-id |
+|              | Name               | CoreServicesVnet                   |
+|              | Region             | (US) West US                       |
+| IP Addresses | IPv4 address space | 10.20.0.0/16                       |
+**Note: you will get Deployment-id from the enviroment page link of lab guide
  5. Use the information in the following table to create the CoreServicesVnet subnets.
 
  6. To begin creating each subnet, select **+ Add subnet**. To finish creating each subnet, select **Add**.
@@ -94,7 +94,7 @@ In this exercise, you will:
 
 | **Tab**      | **Option**         | **Value**             |
 | ------------ | ------------------ | --------------------- |
-| Basics       | Resource Group     | ContosoResourceGroup  |
+| Basics       | Resource Group     | ContosoResourceGroup-Deployment-id  |
 |              | Name               | ManufacturingVnet     |
 |              | Region             | (Europe) North Europe |
 | IP Addresses | IPv4 address space | 10.30.0.0/16          |
@@ -118,7 +118,7 @@ In this exercise, you will:
 
 | **Tab**      | **Option**         | **Value**            |
 | ------------ | ------------------ | -------------------- |
-| Basics       | Resource Group     | ContosoResourceGroup |
+| Basics       | Resource Group     | ContosoResourceGroup-Deployment-id |
 |              | Name               | ResearchVnet         |
 |              | Region             | West India           |
 | IP Addresses | IPv4 address space | 10.40.0.0/16         |
